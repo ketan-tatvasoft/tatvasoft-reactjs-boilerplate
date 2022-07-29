@@ -1,0 +1,28 @@
+.page-not-found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 285px;
+  margin: -140px 0 0 -182px;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.page-not-found h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.page-not-found button {
+  cursor: pointer;
+  background: #333;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+}
+.page-not-found button:hover {
+  background: #f29622;
+}
