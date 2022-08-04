@@ -1,0 +1,48 @@
+.croud-toolbar {
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+.table-wrapper {
+  height:500px;
+  overflow-x:auto;
+  margin-right: 10px;
+}
+
+table{
+  width:100%;
+  table-layout: fixed;
+  border: solid 1px #f0f0f0;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th{
+  padding: 15px 10px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+td{
+  padding: 5px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.no-data-found {
+  background: #f0f0f0;
+  text-align: center;
+  font-size: 14px;
+  padding: 16px;
+  border-radius: 4px;
+}

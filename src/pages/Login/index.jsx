@@ -19,6 +19,7 @@ function Login() {
 
   /****** EVENT HANDLING ******/
   const handleLogin = () => {
+    // Make an API call here to authrosize the credentials and retrieve access_token
     localStorage.setItem(ACCESS_TOKEN, 'access_token_given_by_the_successfull_login_api_call');
     return navigate(PRIVATE_ROUTES.HOME);
   };

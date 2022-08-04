@@ -26,4 +26,11 @@
 .right-side .btn-logout {
   padding: 5px 10px;
   cursor: pointer;
+  border-radius: 4px;
+  outline: 0;
+  border: none;
+}
+.btn-logout:hover {
+  background-color: gray;
+  color: white;
 }

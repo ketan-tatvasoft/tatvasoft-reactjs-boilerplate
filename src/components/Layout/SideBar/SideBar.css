@@ -1,7 +1,6 @@
 .sideBar-wrapper {
   background: rgb(238, 238, 238);
   position: fixed;
-  top: 50px;
   left: 0;
   width: 200px;
   height: 100%;
@@ -22,5 +21,6 @@
 .sideBar-wrapper ul li a.active{
     color: #f29622;
     background:white;
-    border-right: 2px solid rgb(242, 150, 34);
+    border-right: 5px solid rgb(242, 150, 34);
+    font-weight: 500;
 }

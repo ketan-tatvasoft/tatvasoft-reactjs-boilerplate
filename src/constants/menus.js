@@ -7,7 +7,7 @@ export const SIDEBAR_MENUS = [
   },
   {
     LABEL: 'CRUD',
-    ROUTE: PRIVATE_ROUTES.CRUD
+    ROUTE: PRIVATE_ROUTES.CRUD.INDEX
   },
   {
     LABEL: 'Profile',

@@ -5,6 +5,10 @@ export const PUBLIC_ROUTES = {
 export const PRIVATE_ROUTES = {
   HOME: '/',
   DASHBOARD: '/',
-  CRUD: '/crud',
+  CRUD: {
+    INDEX: '/crud',
+    CREATE: 'create',
+    EDIT: 'edit/:id'
+  },
   PROFILE: '/profile'
 };
