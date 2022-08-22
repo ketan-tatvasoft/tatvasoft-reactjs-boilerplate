@@ -10,5 +10,10 @@ export const PRIVATE_ROUTES = {
     CREATE: 'create',
     EDIT: 'edit/:id'
   },
-  PROFILE: '/profile'
+  PROFILE: '/profile',
+  CRUD_WITH_REDUX: {
+    INDEX: '/crud-with-redux',
+    CREATE: 'create',
+    EDIT: 'edit/:id'
+  }
 };
