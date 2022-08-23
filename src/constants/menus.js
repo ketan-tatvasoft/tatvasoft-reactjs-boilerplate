@@ -12,5 +12,9 @@ export const SIDEBAR_MENUS = [
   {
     LABEL: 'Profile',
     ROUTE: PRIVATE_ROUTES.PROFILE
+  },
+  {
+    LABEL: 'CRUD - Redux',
+    ROUTE: PRIVATE_ROUTES.CRUD_WITH_REDUX.INDEX
   }
 ];

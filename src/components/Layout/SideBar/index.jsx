@@ -14,7 +14,9 @@ function SideBar() {
           {SIDEBAR_MENUS.map((menu, index) => {
             return (
               <li key={index}>
-                <Link to={menu.ROUTE}>{menu.LABEL}</Link>
+                <Link to={menu.ROUTE} className={menu.LABEL == 'CRUD - Redux' ? 'active' : null}>
+                  {menu.LABEL}
+                </Link>
               </li>
             );
           })}

@@ -11,6 +11,10 @@ import CRUD from './pages/CRUD';
 import List from './pages/CRUD/List';
 import Create from './pages/CRUD/Create';
 import Edit from './pages/CRUD/Edit';
+import CRUD_WITH_REDUX from './pages/CRUD_WITH_REDUX';
+import List_CRUD_WITH_REDUX from './pages/CRUD_WITH_REDUX/List';
+import Create_CRUD_WITH_REDUX from './pages/CRUD_WITH_REDUX/Create';
+import Edit_CRUD_WITH_REDUX from './pages/CRUD_WITH_REDUX/Edit';
 import NotFound from './pages/NotFound';
 
 // Constants
@@ -36,6 +40,18 @@ function App() {
               <Route path={PRIVATE_ROUTES.CRUD.EDIT} element={<Edit />} />
             </Route>
             <Route path={PRIVATE_ROUTES.PROFILE} element={<Profile />} />
+            {/* Example : CRUD with Redux  */}
+            <Route path={PRIVATE_ROUTES.CRUD_WITH_REDUX.INDEX} element={<CRUD_WITH_REDUX />}>
+              <Route index element={<List_CRUD_WITH_REDUX />} />
+              <Route
+                path={PRIVATE_ROUTES.CRUD_WITH_REDUX.CREATE}
+                element={<Create_CRUD_WITH_REDUX />}
+              />
+              <Route
+                path={PRIVATE_ROUTES.CRUD_WITH_REDUX.EDIT}
+                element={<Edit_CRUD_WITH_REDUX />}
+              />
+            </Route>
 
             {/* 404 - Page not found */}
             <Route path="*" element={<NotFound />} />
