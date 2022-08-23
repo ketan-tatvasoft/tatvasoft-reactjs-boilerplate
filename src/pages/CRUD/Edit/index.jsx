@@ -4,10 +4,13 @@ import { Link, useParams, useNavigate } from 'react-router-dom';
 // Services
 import { getEditProduct, updateProduct } from '../../../services/product';
 
+// Constants
+import { PRIVATE_ROUTES } from '../../../constants/routes';
+
 // CSS
 import './styles.css';
 
-function Create() {
+function Edit() {
   /****** STATES ******/
   const { id } = useParams();
   const navigate = useNavigate();
@@ -43,7 +46,7 @@ function Create() {
       .then((response) => {
         if (response.status === 200) {
           alert('Product Updated Successfully');
-          navigate('/crud');
+          navigate(PRIVATE_ROUTES.CRUD.INDEX);
         }
       })
       .catch((error) => {
@@ -84,7 +87,7 @@ function Create() {
         <button type="submit" className="btn btn-success" onClick={handleUpdateProduct}>
           Submit
         </button>
-        <Link to="/crud" className="btn ml-5">
+        <Link to={PRIVATE_ROUTES.CRUD.INDEX} className="btn ml-5">
           Cancel
         </Link>
       </div>
@@ -92,4 +95,4 @@ function Create() {
   );
 }
 
-export default Create;
+export default Edit;

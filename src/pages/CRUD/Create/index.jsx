@@ -4,6 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 // Services
 import { createProduct } from '../../../services/product';
 
+// Constants
+import { PRIVATE_ROUTES } from '../../../constants/routes';
+
 // CSS
 import './styles.css';
 
@@ -29,7 +32,7 @@ function Create() {
       .then((response) => {
         if (response.status === 201) {
           alert('New Product Created');
-          navigate('/crud');
+          navigate(PRIVATE_ROUTES.CRUD.INDEX);
         }
       })
       .catch((error) => {
@@ -70,7 +73,7 @@ function Create() {
         <button type="submit" className="btn btn-success" onClick={handleSubmit}>
           Submit
         </button>
-        <Link to="/crud" className="btn ml-5">
+        <Link to={PRIVATE_ROUTES.CRUD.INDEX} className="btn ml-5">
           Cancel
         </Link>
       </div>
